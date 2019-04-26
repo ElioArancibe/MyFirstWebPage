@@ -1,0 +1,44 @@
+#contact-bar{
+    display: none;
+}
+
+header label{
+     float: right;
+    font-size:28px;
+    margin:6px 0;
+    cursor:pointer; /*Cursor seleccionando*/
+}
+.contacto{
+    position: absolute;
+    width:100%;
+    height:280px;/*100vh;tomar siempre el 100% de la pantalla*/
+    background: rgba(51,51,51,0.9);
+    top: 50px;
+    transition: all 0.5s; /*Investigar*/
+    transform: translateX(100%); /*Ir a #contacto-bar:checked~*/
+}
+
+.contacto a{
+      
+    cursor: pointer;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    width: 100%;
+
+    height: 70px;
+    text-decoration: none;
+ 
+    border-bottom: 1px solid rgba(255,255,2555,0.5);
+    font-size:40px;
+}
+.contacto a:hover{
+    background: rgba(255,255,255,0.3);
+}
+
+
+
+#contact-bar:checked ~ .contacto{    
+    transform: translateX(0%);
+}

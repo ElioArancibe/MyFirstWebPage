@@ -1,0 +1,125 @@
+aside{
+    height: 1000px;
+    width: 100%;
+    background:rgb(176,230,255);
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.containerAside{
+    width: 100%;
+    max-width: 1032px;
+    background:rgb(176,230,255);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    position: relative;
+    
+    
+}
+.selector{
+    position: absolute;
+    opacity: 0;
+    width:0;
+    height: 0;
+}
+
+.box{
+    
+    opacity:1;
+    display: inline-block;
+    width:100%;
+     max-width:1032px;
+    padding-left:1%;
+    padding-right: 1%;
+    padding-bottom:3%;
+    background: white;
+    margin-bottom:1px;
+}
+
+
+
+h2{
+    font-size: 28px;
+     font-family:'Righteous', sans-serif;
+        /* Audiowide  Lobster  Pacifico  Righteous */
+
+}
+p{
+    font-size:20px;
+  font-family:'Open Sans', sans-serif;
+}
+
+
+/*Al superar 1032px*/
+
+@media screen and (min-width:1032px){
+            aside h2{
+                opacity: 0;
+            }
+
+
+            .box{
+                  max-width: 1032px;
+                    position: absolute;
+                    top:5%;
+            }        
+
+            .box2, .box3, .box4{
+                opacity: 0;   
+            }
+
+            .selector{
+                transition:1s;
+
+                max-width:1032px;
+
+                position:relative;
+
+                opacity:1;
+
+                width:100%;
+                height:50px;
+
+                background:rgba(51,51,51,0.9);
+
+                display: flex;
+                align-items: center;
+            }
+
+            .selector a{
+                cursor: pointer;
+                color: white;
+                width: 25%;
+                height: 100%;
+                display: flex;
+                
+                align-items: center;
+                justify-content: center;
+            }
+            .selector a:hover{
+                background: white;
+                color: black;
+            }
+            
+    
+            #opcion1.active{
+                background:white;
+                color:black;
+            }
+            #opcion2.active{
+                background:white;
+                color:black;
+            }
+            #opcion3.active{
+                background:white;
+                color:black;
+            }
+            #opcion4.active{
+                background:white;
+                color:black;
+            }
+
+
+}

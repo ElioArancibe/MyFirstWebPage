@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Alfa+Slab+One|Audiowide|Lobster|Pacifico|Righteous|Anton|Open+Sans');
+
+@import url(menu.css);
+@import url(banner.css);
+@import url(aside.css);
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+        background:rgb(176,230,255);
+        text-align: center;
+        font-family:'Lobster', sans-serif;
+
+    /* Audiowide  Lobster  Pacifico  Righteous */
+}
+
+header{
+    font-family:'Audiowide', sans-serif;
+    width: 100%;
+    height:50px;
+    background: #333;
+    color: white;
+    
+    position: fixed;
+    top:0; left:0;
+    z-index:100;  
+    /*para que se vea primero*/
+}
+
+.container1{
+    width:100%; /*98%*/
+    margin: auto;
+    display: table;  /*Limpiar float y que el container este en todo el header*/
+    
+}
+
+h1{
+    float: left;
+}
+
+
+.main{
+    position: relative;
+    margin-top:50px; /*Evitar que empiece desde la barra superior*/
+    background: red;
+    width:100%;
+    max-height:370px;
+    height:100%;
+}
+

@@ -1,0 +1,44 @@
+#banner{
+    box-sizing: border-box;
+    color: black;
+    width:100%;
+    
+    display: flex;
+    justify-content: center;
+    
+    background:rgb(176,230,255);
+
+}
+
+.imagen-container{ 
+    box-sizing: border-box;
+    position: relative;
+    width:100%;
+    max-width:1032px;
+    min-width: 300px;
+    min-height: 107px;
+    max-height:370px;
+}
+
+
+#banner .imagen-container img{
+    /* 1032 370*/
+    width:100%;
+    max-width:1032px;
+    min-width: 300px;
+    height:100%;
+    min-height: 107px;
+    max-height:370px;
+    margin:0;
+    padding:0;
+
+}
+
+#banner .imagen-container h2{
+    width:100%;
+    position:absolute;
+    display: flex;
+    justify-content: center;    
+    top:10%;
+    font-size:28px;
+}
